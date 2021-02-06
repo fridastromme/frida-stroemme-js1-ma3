@@ -28,7 +28,7 @@ async function getGames() {
          <div class="rating"><h2>Rating: </h2>${ratingContainer}</div>
          <div class="tags"><h2>Number of tags: </h2>${tagsContainer}</div>
          </div>
-         </div>`
+         </div>`;
     }
 }
 
@@ -38,6 +38,6 @@ try {
     getGames();
 } catch (error) {
 
-    const errorMessage = "Could not load games. Try again later."
+    const errorMessage = "Could not load games. Try again later.";
     errorContainer.innerHTML += `<h2>${errorMessage}</h2>`;
 }
