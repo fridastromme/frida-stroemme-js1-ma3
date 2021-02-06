@@ -24,7 +24,11 @@ const gamesContainer = document.querySelector(".games");
              break;
          }
 
-         gamesContainer.innerHTML += `<div class="name">${nameContainer}</div><div class="rating">${ratingContainer}</div><div class="name">${tagsContainer}</div>`
+         gamesContainer.innerHTML += 
+         `<div class="name"><h2>Title: </h2>${nameContainer}
+         <div class="numbers">
+         <div class="rating"><h2>Rating: </h2>${ratingContainer}</div>
+         <div class="tags"><h2>Number of tags: </h2>${tagsContainer}</div></div></div>`
      }
  }
 
@@ -36,5 +40,5 @@ try {
 catch(error){
 
     const errorMessage = "Could not load games. Try again later."
-    gamesContainer.innerHTML += `<h2>${errorMessage}</h2>`;
+    errorContainer.innerHTML += `<h2>${errorMessage}</h2>`;
 }
