@@ -1,15 +1,66 @@
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(0, 195, 255);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(255, 0, 85);
+}
+
 .games {
-  border: solid 1px red;
-  color: yellow;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 195, 255);
+  background-color: rgba(0, 195, 255, 0.2);
+  padding: 5%;
+  margin: 1rem;
+}
+
+.name {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(0, 195, 255);
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid rgb(0, 195, 255);
+  padding: 5%;
+  margin: 1rem;
+}
+
+.rating {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(255, 0, 85);
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 0, 85);
+  padding: 5%;
+  margin: 1rem;
 }
 
 /* Style denne på egen måte */
 .loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid darkred;
+  border: 10px solid rgba(0, 195, 255);
+  border-left: 10px solid #fff;
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  margin-left: 50%;
-  animation: spin 2s linear infinite;
+  margin: auto;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
